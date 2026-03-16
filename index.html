@@ -20,7 +20,7 @@
       bottom: -150px; left: -50%; animation: move 2s linear infinite; z-index: 1;
     }
     @keyframes move { from { background-position: 0 0; } to { background-position: 0 50px; } }
-    /* Sunset with Icon Overlay */
+    
     .sunset {
       position: absolute; top: 15%; width: 300px; height: 300px;
       background: linear-gradient(#ff00ff, #ffcc00);
@@ -37,8 +37,20 @@
       box-shadow: 0 0 20px var(--neon-pink); text-align: center;
     }
     h1 { font-size: 2.5em; color: var(--neon-pink); text-shadow: 2px 2px #000; margin: 0; }
+    
+    /* Custom Vaporwave Button Style */
+    esp-web-install-button {
+      --esp-tools-button-color: var(--neon-pink);
+      --esp-tools-button-text-color: #ffffff;
+    }
+    
+    .debug-btn {
+      background: var(--neon-cyan); color: #000; border: none; 
+      padding: 10px; cursor: pointer; font-family: inherit; font-weight: bold;
+      margin-top: 10px;
+    }
+
     .success-msg { display: none; color: #00ff00; font-weight: bold; margin-top: 15px; }
-    esp-web-install-button { --esp-tools-button-color: var(--neon-pink); }
     .footer { margin-top: 20px; font-size: 0.8em; }
     a { color: var(--neon-cyan); text-decoration: none; border-bottom: 1px solid var(--neon-pink); }
   </style>
@@ -46,17 +58,18 @@
 <body>
   <div class="grid"></div>
   <div class="sunset">
-    <!-- This puts your icon in the center of the sun -->
     <img src="favicon.ico" alt="GoatNet Logo">
   </div>
   
   <div class="card">
     <h1>ＧＯＡＴＮＥＴ</h1>
-    <p>ＣＡＲＤＰＵＴＥＲ ＥＤＩＴＩＯＮ</p>
+    <p>ＣＡＲＤＰＵＴＥＲ ＡＤＶ</p>
     
+    <!-- FIXED SCRIPT URL BELOW -->
     <script type="module" src="https://unpkg.com"></script>
+    
     <esp-web-install-button manifest="manifest.json" id="install-btn">
-      <button slot="show-logs" style="background:var(--neon-cyan); border:none; padding:10px; cursor:pointer; font-family:inherit;">ＤＥＢＵＧ ＬＯＧＳ</button>
+      <button slot="show-logs" class="debug-btn">ＤＥＢＵＧ ＬＯＧＳ</button>
     </esp-web-install-button>
 
     <div id="status" class="success-msg">INSTALL COMPLETE! 🐐🚀</div>
