@@ -18,4 +18,8 @@ Currently WIP. BT IGATT is broken will freeze don't use.
   should be joining your opponent. 
   place ships and when done type ready or chat ready to start game. 
 
-  I'll update this more later. 
+  to get flights to show - settings gps true icao entercode 
+  terminal > ft wifi  
+  flight tracker > should be a list now 
+
+  I'll update this more later.
