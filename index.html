@@ -65,22 +65,25 @@
     <h1>ＧＯＡＴＮＥＴ</h1>
     <p>ＣＡＲＤＰＵＴＥＲ ＡＤＶ</p>
     
-    <!-- FIXED SCRIPT URL BELOW -->
-    <script type="module" src="https://unpkg.com"></script>
-    
-  <esp-web-install-button manifest="manifest.json" id="install-btn">
-    <button slot="activate" class="debug-btn">ＣＯＮＮＥＣＴ ＆ ＩＮＳＴＡＬＬ</button>
-    <button slot="show-logs" class="debug-btn">ＤＥＢＵＧ ＬＯＧＳ</button>
-  </esp-web-install-button>
+    <!-- Use flexbox on the container to center the button perfectly -->
+    <div style="display: flex; justify-content: center; align-items: center; margin: 20px 0;">
+      <esp-web-install-button manifest="manifest.json">
+        <!-- The slot="activate" is CRITICAL for the button to work -->
+        <button slot="activate" class="debug-btn" style="padding: 15px 30px; font-size: 1.1em;">
+          ＣＯＮＮＥＣＴ ＆ ＩＮＳＴＡＬＬ
+        </button>
+        <button slot="show-logs" class="debug-btn">ＤＥＢＵＧ ＬＯＧＳ</button>
+      </esp-web-install-button>
+    </div>
 
-  <div id="status" class="success-msg">INSTALL COMPLETE! 🐐🚀</div>
-</div>
+    <div id="status" class="success-msg">INSTALL COMPLETE! 🐐🚀</div>
 
     <div class="footer">
       NEED HELP? @mrgoat ON <a href="https://counter.social" target="_blank">COUNTER.SOCIAL</a>
     </div>
   </div>
 
+  <script type="module" src="https://unpkg.com"></script>
   <script>
     const btn = document.querySelector('esp-web-install-button');
     const status = document.getElementById('status');
@@ -89,4 +92,5 @@
     });
   </script>
 </body>
+
 </html>
