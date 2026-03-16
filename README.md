@@ -1,11 +1,18 @@
 Currently WIP. BT IGATT is broken will freeze don't use. 
 
-  You should enter your SSID and PW or type wifi.connect <ssid> <pw> and it will get you online       W: at top bar will show OK and terminal will send a message stating connected. 
-  Then do wx nws <ICAO> ie: KJFK  to set weather and flight tracker. 
+  You should enter your SSID and PW or
+  type wifi.connect <ssid> <pw> and it will get you online    
   
-  Do btnaGO to bring up menu and get to settings. j/k to scroll up down and enter on selected to edit. 
+  W: at top bar will show OK and terminal will send a
+  message stating connected. 
+  Then do wx nws <ICAO> ie: KJFK  to set weather
+  and flight tracker. 
+  
+  Do btnaGO to bring up menu and get to settings. j/k to scroll up down 
+  and enter on selected to edit. 
 
-  Change true to false press enter then FN+S to save. You can save after changing multiple settings.  The only non retainer is ICAO atm. Will fix. 
+  Change true to false press enter then FN+S to save. You can save after 
+  changing multiple settings.  The only non retainer is ICAO atm. Will fix. 
   Zipcode isn't needed really - I'll fix it. 
 
   Change your MQTT user to your username 
