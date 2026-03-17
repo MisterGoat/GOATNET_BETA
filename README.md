@@ -21,7 +21,7 @@ Currently WIP. BT IGATT is broken will freeze don't use.
   leave pw as is 
   fn+1 to get terminal - type bs - loads battleship game 
 
-  type 5 <roomcode>
+  type 5 [roomcode]
   should be joining your opponent. 
   place ships and when done type ready or chat ready to start game. 
 
